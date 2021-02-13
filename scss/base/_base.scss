@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; //10px
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
