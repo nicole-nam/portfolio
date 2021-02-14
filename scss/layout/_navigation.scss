@@ -1,0 +1,13 @@
+.navigation {
+  position: relative;
+  &__button-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__button {
+    fill: white;
+    height: 3rem;
+    width: 3rem;
+  }
+}

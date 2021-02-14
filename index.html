@@ -12,32 +12,24 @@
     <title>Nicole Nam</title>
   </head>
   <body>
+    <!-- Top Navigation Menu Mobile -->
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
-      <label for="nav-toggle" class="navigation__button">
-        <span class="navigation__icon"></span>
-      </label>
-      <div class="navigation__background"></div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">CV</a>
-          </li>
-        </ul>
-        <ul class="navigation__icons">
-            <li>Github</li>
-            <li>Linked In</li>
-        </ul>
-      </nav>
-    </div>
-    <header class="header">
-      <div class="header__logo">
-        <a href="/"><h1>Nicole Nam</h1></a>
+      <a href="home">Nicole Nam</a>
+      <div class="navigation__links">
+        <a href="#">Projects</a>
+        <a href="#">CV</a>
+        <div class="navigation__icons">
+          <a href="#">github</a>
+          <a href="#">linked in</a>
+        </div>
       </div>
-    </header>
+      <a href="#" class="navigation__button-box">
+        <svg class="navigation__button">
+          <use xlink:href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </a>
+    </div>
+
     <script src="./js/script.js"></script>
   </body>
 </html>

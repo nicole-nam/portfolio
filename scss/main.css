@@ -24,4 +24,20 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.navigation {
+  position: relative;
+}
+
+.navigation__button-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navigation__button {
+  fill: white;
+  height: 3rem;
+  width: 3rem;
+}
 /*# sourceMappingURL=main.css.map */
