@@ -16,8 +16,8 @@ html {
 body {
   background-color: black;
   color: white;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 300;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: -2px;
 }
 
 a {
@@ -27,17 +27,77 @@ a {
 
 .navigation {
   position: relative;
+  padding: 2rem;
+}
+
+.navigation__logo {
+  font-size: 1.5rem;
+}
+
+.navigation__links {
+  display: none;
+  font-size: 3rem;
+}
+
+.navigation__link-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 1rem;
 }
 
 .navigation__button-box {
   position: absolute;
   top: 0;
   right: 0;
+  margin: 2rem;
 }
 
 .navigation__button {
   fill: white;
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.menu-open {
+  display: block;
+}
+
+#close-menu {
+  display: none;
+}
+
+#github-icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+#linkedin-icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+.header-top {
+  border-bottom: 1px solid white;
+}
+
+.header-bottom {
+  padding: 0 2rem 0 2rem;
 }
 /*# sourceMappingURL=main.css.map */

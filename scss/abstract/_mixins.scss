@@ -1,0 +1,9 @@
+@mixin icon-style {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+}
+
+@mixin header-menu {
+  border-bottom: 1px solid white;
+}

@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap"
+      rel="shortcut icon"
+      type="image/png"
+      href="./images/logo.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/main.css" />
@@ -13,21 +19,39 @@
   </head>
   <body>
     <!-- Top Navigation Menu Mobile -->
-    <div class="navigation">
-      <a href="home">Nicole Nam</a>
-      <div class="navigation__links">
-        <a href="#">Projects</a>
-        <a href="#">CV</a>
-        <div class="navigation__icons">
-          <a href="#">github</a>
-          <a href="#">linked in</a>
-        </div>
+    <div class="header-top">
+      <div class="navigation">
+        <a class="navigation__logo" href="/"><h1>Nicole Nam</h1></a>
       </div>
+
       <a href="#" class="navigation__button-box">
-        <svg class="navigation__button">
+        <svg class="navigation__button" id="open-menu">
           <use xlink:href="./images/sprite.svg#icon-menu"></use>
         </svg>
+        <svg class="navigation__button" id="close-menu">
+          <use xlink:href="./images/sprite.svg#icon-x"></use>
+        </svg>
       </a>
+    </div>
+    <div class="header-bottom">
+      <div class="navigation__links">
+        <div class="navigation__link-items">
+          <a href="#">Projects</a>
+          <a href="#">CV</a>
+        </div>
+        <div class="navigation__icons">
+          <a href="#">
+            <svg id="github-icon">
+              <use xlink:href="./images/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg id="linkedin-icon">
+              <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
     <script src="./js/script.js"></script>
