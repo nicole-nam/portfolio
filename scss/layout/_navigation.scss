@@ -2,8 +2,8 @@
   position: relative;
   padding: 2rem;
 
-  &__logo {
-    font-size: 1.5rem;
+  &__logo h1 {
+    font-size: 3.5rem;
   }
 
   &__links {
@@ -14,6 +14,7 @@
   &__link-items {
     display: flex;
     flex-direction: column;
+    font-size: 3rem;
   }
 
   &__icons {
@@ -31,8 +32,8 @@
 
   &__button {
     fill: white;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3rem;
+    width: 3rem;
     cursor: pointer;
   }
 }
@@ -61,5 +62,15 @@
 }
 
 .header-bottom {
+  position: absolute;
+  background-color: black;
   padding: 0 2rem 0 2rem;
+  border-bottom: 1px solid white;
+  z-index: 2000;
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
 }
