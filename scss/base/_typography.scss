@@ -3,16 +3,22 @@
   margin-bottom: 5rem;
   position: relative;
 
-  &::after {
-    @media only screen and (max-width: $bp-sm) {
-      content: "+";
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
+  @media only screen and (max-width: $bp-sm) {
+    margin-bottom: 0rem;
   }
 }
+
 .secondary-text {
   font-size: 1.5rem;
   margin-bottom: 3rem;
+}
+
+.extend {
+  display: none;
+
+  @media only screen and (max-width: $bp-sm) {
+    display: block;
+    font-size: 3rem;
+    cursor: pointer;
+  }
 }

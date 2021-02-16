@@ -16,4 +16,17 @@
     border-radius: 1px;
     color: black;
   }
+
+  @media only screen and (max-width: $bp-sm) {
+    &__main {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__sub {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  }
 }
