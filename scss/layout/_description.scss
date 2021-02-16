@@ -6,7 +6,6 @@
 
   &__list {
     display: flex;
-    justify-content: flex-end;
     gap: 2rem;
     list-style: none;
   }
@@ -14,7 +13,7 @@
   &__item {
     background-color: white;
     padding: 1rem;
-    border-radius: 2px;
+    border-radius: 1px;
     color: black;
   }
 }

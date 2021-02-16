@@ -1,7 +1,18 @@
 .primary-text {
-    font-size: 3rem;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  position: relative;
 
+  &::after {
+    @media only screen and (max-width: $bp-sm) {
+      content: "+";
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 }
 .secondary-text {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
