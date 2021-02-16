@@ -6,6 +6,7 @@ const closeIcon = document.getElementById("close-menu");
 const openIcon = document.getElementById("open-menu");
 const headerBottom = document.querySelector(".header-bottom");
 
+
 function menuClick() {
   navLinks.classList.toggle("menu-open");
   if (navLinks.classList.contains("menu-open")) {

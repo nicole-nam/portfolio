@@ -166,6 +166,7 @@ a:hover {
 @media only screen and (max-width: 62.5em) {
   .description {
     grid-column: 1/-1;
+    border-left: none;
   }
 }
 
