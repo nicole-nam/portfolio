@@ -2,8 +2,17 @@
   position: relative;
   padding: 2rem;
 
+  &__desktop {
+    display: none;
+
+    &-icons {
+      display: none;
+    }
+  }
+
   &__logo h1 {
     font-size: 3.5rem;
+    display: inline-block;
   }
 
   &__links {
@@ -75,4 +84,37 @@
 a:hover {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-width: $bp-sm) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &__button-box {
+      display: none;
+      opacity: 0;
+    }
+
+    &__desktop {
+      display: inline-block;
+      font-size: 3rem;
+      align-self: flex-end;
+
+      &-icons {
+        display: flex;
+        gap: 2rem;
+
+        align-self: flex-end;
+      }
+
+      & > :hover {
+        border-bottom: 3px solid white;
+      }
+
+      & > :first-child {
+        margin-right: 1.5rem;
+      }
+    }
+  }
 }

@@ -5,10 +5,8 @@ const navLinks = document.querySelector(".navigation__links");
 const closeIcon = document.getElementById("close-menu");
 const openIcon = document.getElementById("open-menu");
 const headerBottom = document.querySelector(".header-bottom");
-const extendBtn = document.querySelector(".extend");
-const description = document.querySelector(".description__sub");
-console.log(description);
-console.log(extendBtn);
+const extendBtn = document.querySelectorAll(".extend");
+const description = document.querySelectorAll(".description__sub");
 
 function menuClick() {
   navLinks.classList.toggle("menu-open");
@@ -25,9 +23,10 @@ function menuClick() {
 
 navBtn.addEventListener("click", menuClick);
 
-extendBtn.addEventListener("click", function () {
-  console.log("clicked");
-  description.classList.toggle("show");
-});
+//accordian 
 
-//TODO: FIX NAV BAR ON SCROLL, LAYOUT NAV FOR BIG SCREENS, FIX GITHUB AND LINK
+for (let i = 0; i < extendBtn.length; i++) {
+  extendBtn[i].addEventListener("click", function () {
+    description[i].classList.toggle("show");
+  });
+}

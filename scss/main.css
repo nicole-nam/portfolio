@@ -64,8 +64,17 @@ a {
   padding: 2rem;
 }
 
+.navigation__desktop {
+  display: none;
+}
+
+.navigation__desktop-icons {
+  display: none;
+}
+
 .navigation__logo h1 {
   font-size: 3.5rem;
+  display: inline-block;
 }
 
 .navigation__links {
@@ -147,6 +156,41 @@ a:hover {
   color: white;
 }
 
+@media only screen and (min-width: 62.5em) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navigation__button-box {
+    display: none;
+    opacity: 0;
+  }
+  .navigation__desktop {
+    display: inline-block;
+    font-size: 3rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .navigation__desktop-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .navigation__desktop > :hover {
+    border-bottom: 3px solid white;
+  }
+  .navigation__desktop > :first-child {
+    margin-right: 1.5rem;
+  }
+}
+
 .main {
   display: -ms-grid;
   display: grid;
@@ -187,9 +231,9 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 2rem;
 }
 
