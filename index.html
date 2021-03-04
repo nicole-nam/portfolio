@@ -27,6 +27,7 @@
         </a>
         <div class="navigation__desktop">
           <a href="#">Projects</a>
+          <a href="#">Contact</a>
           <a href="#">CV</a>
         </div>
         <div class="navigation__desktop-icons">
@@ -41,20 +42,20 @@
             </svg>
           </a>
         </div>
+        <a href="#" class="navigation__button-box">
+          <svg class="navigation__button" id="open-menu">
+            <use xlink:href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+          <svg class="navigation__button" id="close-menu">
+            <use xlink:href="./images/sprite.svg#icon-x"></use>
+          </svg>
+        </a>
       </div>
-      <a href="#" class="navigation__button-box">
-        <svg class="navigation__button" id="open-menu">
-          <use xlink:href="./images/sprite.svg#icon-menu"></use>
-        </svg>
-        <svg class="navigation__button" id="close-menu">
-          <use xlink:href="./images/sprite.svg#icon-x"></use>
-        </svg>
-      </a>
     </div>
-    <div class="header-bottom">
+    <div class="header-bottom stickyBottom">
       <div class="navigation__links">
         <div class="navigation__link-items">
-          <a href="#">Projects</a>
+          <a href="#">Contacts</a>
           <a href="#">CV</a>
         </div>
         <div class="navigation__icons">
@@ -71,8 +72,8 @@
         </div>
       </div>
     </div>
-    <!-- first carousel -->
     <main class="main">
+      <!-- first carousel -->
       <div
         id="carousel-1"
         class="carousel slide"
@@ -92,7 +93,7 @@
           <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="./images/project-img/loop-mobile.png"
+              src="./images/project-img/countries-desktop.png"
               alt="First slide"
             />
           </div>
@@ -133,7 +134,7 @@
       <div class="description">
         <div class="description__intro">
           <div class="description__main">
-            <h2 class="primary-text">Loopstudios landing pages</h2>
+            <h2 class="primary-text">Loopstudios landing page</h2>
             <p class="extend">+</p>
           </div>
           <div class="description__sub">
@@ -149,12 +150,18 @@
             </ul>
             <div class="description__tech">
               <div class="navigation__icons">
-                <a href="#">
+                <a
+                  href="https://github.com/nicole-nam/loopstudios"
+                  target="_blank"
+                >
                   <svg id="github-icon">
                     <use xlink:href="./images/sprite.svg#icon-github"></use>
                   </svg>
                 </a>
-                <a href="#">
+                <a
+                  href="https://nicole-nam.github.io/loopstudios/"
+                  target="_blank"
+                >
                   <svg id="linkedin-icon">
                     <use xlink:href="./images/sprite.svg#icon-link"></use>
                   </svg>
@@ -179,20 +186,28 @@
             class="active"
           ></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="./images/project-img/random-quotes.png"
+              src="./images/project-img/insure-mobile.png"
               alt="First slide"
             />
           </div>
           <div class="carousel-item">
             <img
               class="d-block w-100"
-              src="./images/project-img/random-quotes.png"
+              src="./images/project-img/insure-desktop.png"
               alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./images/project-img/insure-desktop2.png"
+              alt="Third slide"
             />
           </div>
         </div>
@@ -218,14 +233,14 @@
       <div class="description">
         <div class="description__intro">
           <div class="description__main">
-            <h2 class="primary-text">Loopstudios landing pages</h2>
+            <h2 class="primary-text">Insure landing page</h2>
             <p class="extend">+</p>
           </div>
           <div class="description__sub">
             <p class="secondary-text">
-              Built a Loopstudios landing page using grid system, and created
-              optimal layout for the site depending on their device's screen
-              size.
+              Built a Insure landing page that is fully responsive using
+              technologies such as flexbox and grid. Implemented a fully
+              functioning hamburger button using SASS.
             </p>
             <ul class="description__list">
               <li class="description__item">HTML</li>
@@ -234,12 +249,18 @@
             </ul>
             <div class="description__tech">
               <div class="navigation__icons">
-                <a href="#">
+                <a
+                  href="https://github.com/nicole-nam/insure-landing-page"
+                  target="_blank"
+                >
                   <svg id="github-icon">
                     <use xlink:href="./images/sprite.svg#icon-github"></use>
                   </svg>
                 </a>
-                <a href="#">
+                <a
+                  href="https://nicole-nam.github.io/insure-landing-page/"
+                  target="_blank"
+                >
                   <svg id="linkedin-icon">
                     <use xlink:href="./images/sprite.svg#icon-link"></use>
                   </svg>
@@ -250,22 +271,78 @@
         </div>
       </div>
 
-      <!-- third carousel  -->
+      <!-- third carousel -->
       <div
         id="carousel-3"
         class="carousel slide"
         data-ride="carousel"
         data-interval="false"
       >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="./images/project-img/random-quotes.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./images/project-img/random-quotes.png"
+              alt="Second slide"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="description__intro">
+          <div class="description__main">
+            <h2 class="primary-text">Random Quotes Generator</h2>
+            <p class="extend">+</p>
+          </div>
+          <div class="description__sub">
+            <p class="secondary-text">
+              Built a Random Quotes generator using Go quotes api. It generates
+              random quotes every time next quote button is clicked and is
+              shareable using user's twitter account.
+            </p>
+            <ul class="description__list">
+              <li class="description__item">HTML</li>
+              <li class="description__item">CSS</li>
+              <li class="description__item">Javascript</li>
+            </ul>
+            <div class="description__tech">
+              <div class="navigation__icons">
+                <a
+                  href="https://github.com/nicole-nam/random-quotes"
+                  target="_blank"
+                >
+                  <svg id="github-icon">
+                    <use xlink:href="./images/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://nicole-nam.github.io/random-quotes/"
+                  target="_blank"
+                >
+                  <svg id="linkedin-icon">
+                    <use xlink:href="./images/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fourth carousel  -->
+      <div
+        id="carousel-4"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -289,9 +366,83 @@
             />
           </div>
         </div>
+      </div>
+      <div class="description">
+        <div class="description__intro">
+          <div class="description__main">
+            <h2 class="primary-text">City Weather App</h2>
+            <p class="extend">+</p>
+          </div>
+          <div class="description__sub">
+            <p class="secondary-text">
+              Built a simple weather app using Open Weather API. Type in a city
+              name and it fetches current weather data of that city. Also
+              changes the background image depending on the temperature of the
+              current city.
+            </p>
+            <ul class="description__list">
+              <li class="description__item">HTML</li>
+              <li class="description__item">CSS</li>
+              <li class="description__item">React JS</li>
+            </ul>
+            <div class="description__tech">
+              <div class="navigation__icons">
+                <a
+                  href="https://nicole-nam.github.io/weather-react/"
+                  target="_blank"
+                >
+                  <svg id="github-icon">
+                    <use xlink:href="./images/sprite.svg#icon-github"></use>
+                  </svg>
+                </a>
+                <a
+                  href="https://nicole-nam.github.io/weather-react/"
+                  target="_blank"
+                >
+                  <svg id="linkedin-icon">
+                    <use xlink:href="./images/sprite.svg#icon-link"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- fifth carousel -->
+      <div
+        id="carousel-5"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="./images/project-img/keeper-desktop.png"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./images/project-img/keeper-mobile.png"
+              alt="Second slide"
+            />
+          </div>
+        </div>
         <a
           class="carousel-control-prev"
-          href="#carousel-3"
+          href="#carousel-5"
           role="button"
           data-slide="prev"
         >
@@ -300,7 +451,7 @@
         </a>
         <a
           class="carousel-control-next"
-          href="#carousel-3"
+          href="#carousel-5"
           role="button"
           data-slide="next"
         >
@@ -311,28 +462,33 @@
       <div class="description">
         <div class="description__intro">
           <div class="description__main">
-            <h2 class="primary-text">Loopstudios landing pages</h2>
+            <h2 class="primary-text">Keeper App</h2>
             <p class="extend">+</p>
           </div>
           <div class="description__sub">
             <p class="secondary-text">
-              Built a Loopstudios landing page using grid system, and created
-              optimal layout for the site depending on their device's screen
-              size.
+              Note taking app built using React. Add title and content to each
+              note item and delete once they are no longer needed.
             </p>
             <ul class="description__list">
               <li class="description__item">HTML</li>
-              <li class="description__item">CSS/SCSS</li>
+              <li class="description__item">CSS</li>
               <li class="description__item">Javascript</li>
             </ul>
             <div class="description__tech">
               <div class="navigation__icons">
-                <a href="#">
+                <a
+                  href="https://github.com/nicole-nam/keeper-app"
+                  target="_blank"
+                >
                   <svg id="github-icon">
                     <use xlink:href="./images/sprite.svg#icon-github"></use>
                   </svg>
                 </a>
-                <a href="#">
+                <a
+                  href="https://nicole-nam.github.io/keeper-app/"
+                  target="_blank"
+                >
                   <svg id="linkedin-icon">
                     <use xlink:href="./images/sprite.svg#icon-link"></use>
                   </svg>

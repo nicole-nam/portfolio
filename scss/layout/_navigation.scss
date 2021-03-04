@@ -76,7 +76,7 @@
   position: absolute;
   background-color: black;
   padding: 0 2rem 0 2rem;
-  border-bottom: 1px solid white;
+  // border-bottom: 1px solid white;
   z-index: 2000;
   width: 100%;
 }
@@ -112,9 +112,27 @@ a:hover {
         border-bottom: 3px solid white;
       }
 
-      & > :first-child {
+      & > :not(:last-child) {
         margin-right: 1.5rem;
       }
     }
+  }
+}
+
+// sticky navigation
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: black;
+  border-bottom: .1px solid white;
+}
+
+.stickyBottom {
+  position: fixed;
+  top: 9.5%;
+  @media only screen and (min-width: $bp-sm) {
+    display: none;
   }
 }
