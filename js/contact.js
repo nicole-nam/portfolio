@@ -1,7 +1,4 @@
 window.addEventListener("DOMContentLoaded", function () {
-  // get the form elements defined in your form HTML above
-
-  console.log("hi");
   var form = document.getElementById("my-form");
   var status = document.getElementById("status");
 
@@ -9,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function success() {
     form.reset();
-    status.innerHTML = "Thanks!";
+    status.innerHTML = "Your message has been sent. Thank you! ";
   }
 
   function error() {

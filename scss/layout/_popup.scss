@@ -31,7 +31,7 @@
 
   &__content {
     width: 75%;
-    height: 70rem;
+    height: 75rem;
     box-shadow: 0 2rem 4rem rgba(#000000, 0.2);
     background-color: #fff;
 
@@ -40,6 +40,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 3px;
+    @media only screen and (max-width: $bp-sm) {
+      height: 80rem;
+    }
   }
   &__header-text {
     color: #000000;
@@ -53,6 +56,10 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: $bp-med) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__form {
@@ -61,12 +68,20 @@
     align-items: center;
     gap: 2rem;
     border-right: 1px solid #000;
+    @media only screen and (max-width: $bp-med) {
+      border-right: none;
+      margin-bottom: 3rem;
+    }
   }
 
   &__email {
     @include form-style;
     padding: 1rem 2rem;
     width: 400px;
+
+    @media only screen and (max-width: $bp-xs) {
+      width: 200px;
+    }
   }
   &__label-1 {
     @include label;
@@ -80,6 +95,10 @@
     width: 400px;
     height: 200px;
     resize: none;
+    @media only screen and (max-width: $bp-xs) {
+      width: 200px;
+      height: 100px;
+    }
   }
 
   &__btn {
@@ -91,11 +110,18 @@
     width: 400px;
     cursor: pointer;
     transition: all 0.3s;
-    outline: none;
+    &:focus {
+      outline: none;
+    }
+
     &:hover {
       background-color: #fff;
       color: #000;
       border: 1px solid #000;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      width: 200px;
     }
   }
 
@@ -123,10 +149,29 @@
   &__contact-detail {
     font-size: 1.5rem;
     font-weight: 400;
+    letter-spacing: 1px;
     cursor: pointer;
+  }
+
+  &__contact-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    @media only screen and (max-width: $bp-med) {
+      padding: 2rem;
+      flex-direction: row;
+      gap: 1rem;
+      border-top: 0.5px solid #000;
+    }
+
+    @media only screen and (max-width: $bp-xs) {
+      flex-direction: column;
+    }
   }
 }
 
 #status {
-  color: black;
+  color: orangered;
+  font-size: 1.5rem;
 }
