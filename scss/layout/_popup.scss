@@ -6,6 +6,15 @@
   left: 0;
   background-color: rgba(#000000, 0.8);
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__content {
     width: 75%;
     height: 70rem;
@@ -36,21 +45,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    border-right: 1px solid #000;
   }
 
   &__email {
     @include form-style;
     padding: 1rem 2rem;
+    width: 400px;
   }
   &__label-1 {
-    color: #000000;
+    @include label;
   }
 
   &__label-2 {
-    color: #000000;
+    @include label;
   }
   &__text {
     @include form-style;
+    width: 400px;
+    height: 200px;
     resize: none;
   }
 
@@ -60,6 +74,33 @@
     border-radius: 3px;
     color: #fff;
     background-color: #000;
-    width: 300px;
+    width: 400px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  &__links,
+  &__links:link,
+  &__links:visited {
+    display: flex;
+    gap: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  &__contact-detail {
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
   }
 }

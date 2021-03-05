@@ -318,6 +318,15 @@ a:hover {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popup__content {
@@ -361,29 +370,34 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2rem;
+  border-right: 1px solid #000;
 }
 
 .popup__email {
-  width: 300px;
-  height: 150px;
   outline: none;
   border: 1px solid #000;
+  border-radius: 3px;
   padding: 1rem 2rem;
+  width: 400px;
 }
 
 .popup__label-1 {
-  color: #000000;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 .popup__label-2 {
-  color: #000000;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 .popup__text {
-  width: 300px;
-  height: 150px;
   outline: none;
   border: 1px solid #000;
+  border-radius: 3px;
+  width: 400px;
+  height: 200px;
   resize: none;
 }
 
@@ -393,6 +407,43 @@ a:hover {
   border-radius: 3px;
   color: #fff;
   background-color: #000;
-  width: 300px;
+  width: 400px;
+}
+
+.popup__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+}
+
+.popup__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.popup__links, .popup__links:link, .popup__links:visited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.popup__contact-detail {
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
