@@ -1,6 +1,7 @@
 "use strict";
 
 const navBar = document.querySelector(".navigation");
+const header = document.querySelector(".header");
 const sticky = navBar.offsetTop;
 const navBtn = document.querySelector(".navigation__button-box");
 const navLinks = document.querySelector(".navigation__links");
@@ -10,7 +11,6 @@ const headerBottom = document.querySelector(".header-bottom");
 const headerSticky = headerBottom.offsetTop;
 const extendBtn = document.querySelectorAll(".extend");
 const description = document.querySelectorAll(".description__sub");
-
 
 //sticky navigation bar
 window.onscroll = function () {

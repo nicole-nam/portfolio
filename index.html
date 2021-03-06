@@ -20,55 +20,57 @@
   </head>
   <body>
     <!-- Top Navigation Menu Mobile -->
-    <div class="header-top">
-      <div class="navigation">
-        <a class="navigation__logo" href="/">
-          <h1>Nicole Nam</h1>
-        </a>
-        <div class="navigation__desktop">
-          <a href="#">Projects</a>
-          <a href="#popup">Contact</a>
-          <a href="#">CV</a>
-        </div>
-        <div class="navigation__desktop-icons">
-          <a href="#">
-            <svg id="github-icon">
-              <use xlink:href="./images/sprite.svg#icon-github"></use>
+    <div class="header">
+      <div class="header-top">
+        <div class="navigation">
+          <a class="navigation__logo" href="/">
+            <h1>Nicole Nam</h1>
+          </a>
+          <div class="navigation__desktop">
+            <a href="#">Projects</a>
+            <a href="#popup">Contact</a>
+            <a href="#">CV</a>
+          </div>
+          <div class="navigation__desktop-icons">
+            <a href="https://github.com/nicole-nam" target="_blank">
+              <svg id="github-icon">
+                <use xlink:href="./images/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/nicolenam/" target="_blank">
+              <svg id="linkedin-icon">
+                <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+          <a href="#" class="navigation__button-box">
+            <svg class="navigation__button" id="open-menu">
+              <use xlink:href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+            <svg class="navigation__button" id="close-menu">
+              <use xlink:href="./images/sprite.svg#icon-x"></use>
             </svg>
           </a>
-          <a href="#">
-            <svg id="linkedin-icon">
-              <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
-            </svg>
-          </a>
         </div>
-        <a href="#" class="navigation__button-box">
-          <svg class="navigation__button" id="open-menu">
-            <use xlink:href="./images/sprite.svg#icon-menu"></use>
-          </svg>
-          <svg class="navigation__button" id="close-menu">
-            <use xlink:href="./images/sprite.svg#icon-x"></use>
-          </svg>
-        </a>
       </div>
-    </div>
-    <div class="header-bottom stickyBottom">
-      <div class="navigation__links">
-        <div class="navigation__link-items">
-          <a href="#popup">Contacts</a>
-          <a href="#">CV</a>
-        </div>
-        <div class="navigation__icons">
-          <a href="#">
-            <svg id="github-icon">
-              <use xlink:href="./images/sprite.svg#icon-github"></use>
-            </svg>
-          </a>
-          <a href="#">
-            <svg id="linkedin-icon">
-              <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
-            </svg>
-          </a>
+      <div class="header-bottom stickyBottom">
+        <div class="navigation__links">
+          <div class="navigation__link-items">
+            <a href="#popup">Contacts</a>
+            <a href="#">CV</a>
+          </div>
+          <div class="navigation__icons">
+            <a href="#">
+              <svg id="github-icon">
+                <use xlink:href="./images/sprite.svg#icon-github"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg id="linkedin-icon">
+                <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -593,7 +595,7 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__header">
-          <h1 class="popup__header-text">CONTACT</h1>
+          <h1 class="popup__header-text">Contact</h1>
           <a href="/" class="popup__close">&times;</a>
         </div>
         <div class="popup__grid">

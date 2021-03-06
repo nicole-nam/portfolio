@@ -86,7 +86,7 @@ a:hover {
   color: white;
 }
 
-@media only screen and (min-width: $bp-sm) {
+@media only screen and (min-width: $bp-xxs) {
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -126,13 +126,14 @@ a:hover {
   width: 100%;
   z-index: 10000;
   background-color: black;
-  border-bottom: .1px solid white;
 }
 
 .stickyBottom {
   position: fixed;
-  top: 9.5%;
-  @media only screen and (min-width: $bp-sm) {
+  top: 6%;
+
+
+  @media only screen and (min-width: $bp-xxs) {
     display: none;
   }
 }
