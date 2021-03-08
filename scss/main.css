@@ -206,7 +206,6 @@ a:hover {
 
 .stickyBottom {
   position: fixed;
-  top: 8%;
 }
 
 @media only screen and (min-width: 43.75em) {

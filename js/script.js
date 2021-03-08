@@ -11,7 +11,9 @@ const contact = document.getElementById("contact");
 const extendBtn = document.querySelectorAll(".extend");
 const description = document.querySelectorAll(".description__sub");
 const sticky = navBar.offsetTop;
+console.log(sticky);
 const headerSticky = headerBottom.offsetTop;
+console.log(headerSticky);
 
 //sticky navigation bar
 window.onscroll = function () {
@@ -21,8 +23,19 @@ window.onscroll = function () {
 function stickyNav() {
   if (window.pageYOffset > sticky) {
     navBar.classList.add("sticky");
+    navLinks.classList.remove("menu-open");
+    openIcon.style.display = "block";
+    closeIcon.style.display = "none";
   } else {
     navBar.classList.remove("sticky");
+  }
+}
+
+function stickyBottom() {
+  if (window.pageYOffset > headerSticky) {
+    headerBottom.classList.add("stickyBottom");
+  } else {
+    headerBottom.classList.remove("stickyBottom");
   }
 }
 
