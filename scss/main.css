@@ -19,6 +19,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 body {
   background-color: black;
   color: white;
@@ -373,6 +379,8 @@ a:hover {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 75em) {
@@ -395,6 +403,8 @@ a:hover {
           align-items: center;
   gap: 2rem;
   border-right: 1px solid #000;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 75em) {
@@ -410,12 +420,12 @@ a:hover {
   border-radius: 3px;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  width: 400px;
+  width: 60%;
 }
 
 @media only screen and (max-width: 56.25em) {
   .popup__email {
-    width: 200px;
+    width: 60%;
   }
 }
 
@@ -434,15 +444,16 @@ a:hover {
   border: 1px solid #000;
   border-radius: 3px;
   font-size: 1.5rem;
-  width: 400px;
+  padding: 2rem;
+  width: 60%;
   height: 200px;
   resize: none;
 }
 
 @media only screen and (max-width: 56.25em) {
   .popup__text {
-    width: 200px;
     height: 100px;
+    width: 60%;
   }
 }
 
@@ -452,7 +463,7 @@ a:hover {
   border-radius: 3px;
   color: #fff;
   background-color: #000;
-  width: 400px;
+  width: 60%;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -466,12 +477,6 @@ a:hover {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .popup__btn {
-    width: 200px;
-  }
 }
 
 .popup__contact {

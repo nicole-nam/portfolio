@@ -608,13 +608,14 @@
             <label class="popup__label-1"> Your email: </label>
             <input
               class="popup__email"
-              type="text"
+              type="email"
               name="_replyto"
               autocomplete="off"
+              required
             />
 
             <label class="popup__label-2"> Your message: </label>
-            <textarea class="popup__text" name="message"></textarea>
+            <textarea class="popup__text" name="message" required></textarea>
 
             <button class="popup__btn" type="submit">Send</button>
             <div class="success" id="status"></div>

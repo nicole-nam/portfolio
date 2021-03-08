@@ -57,6 +57,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    max-width: 100rem;
+    margin: 0 auto;
+
     @media only screen and (max-width: $bp-med) {
       grid-template-columns: 1fr;
     }
@@ -68,6 +71,9 @@
     align-items: center;
     gap: 2rem;
     border-right: 1px solid #000;
+
+    width: 100%;
+    margin: 0 auto;
     @media only screen and (max-width: $bp-med) {
       border-right: none;
       margin-bottom: 3rem;
@@ -77,10 +83,9 @@
   &__email {
     @include form-style;
     padding: 1rem 2rem;
-    width: 400px;
-
+    width: 60%;
     @media only screen and (max-width: $bp-xs) {
-      width: 200px;
+      width: 60%;
     }
   }
   &__label-1 {
@@ -92,12 +97,13 @@
   }
   &__text {
     @include form-style;
-    width: 400px;
+    padding: 2rem;
+    width: 60%;
     height: 200px;
     resize: none;
     @media only screen and (max-width: $bp-xs) {
-      width: 200px;
       height: 100px;
+      width: 60%;
     }
   }
 
@@ -107,7 +113,7 @@
     border-radius: 3px;
     color: #fff;
     background-color: #000;
-    width: 400px;
+    width: 60%;
     cursor: pointer;
     transition: all 0.3s;
     &:focus {
@@ -118,10 +124,6 @@
       background-color: #fff;
       color: #000;
       border: 1px solid #000;
-    }
-
-    @media only screen and (max-width: $bp-xs) {
-      width: 200px;
     }
   }
 
