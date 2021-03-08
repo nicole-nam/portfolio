@@ -2,15 +2,16 @@
 
 const navBar = document.querySelector(".navigation");
 const header = document.querySelector(".header");
-const sticky = navBar.offsetTop;
 const navBtn = document.querySelector(".navigation__button-box");
 const navLinks = document.querySelector(".navigation__links");
+const headerBottom = document.querySelector(".header-bottom");
 const closeIcon = document.getElementById("close-menu");
 const openIcon = document.getElementById("open-menu");
-const headerBottom = document.querySelector(".header-bottom");
-const headerSticky = headerBottom.offsetTop;
+const contact = document.getElementById("contact");
 const extendBtn = document.querySelectorAll(".extend");
 const description = document.querySelectorAll(".description__sub");
+const sticky = navBar.offsetTop;
+const headerSticky = headerBottom.offsetTop;
 
 //sticky navigation bar
 window.onscroll = function () {
@@ -39,6 +40,7 @@ function menuClick() {
 }
 
 navBtn.addEventListener("click", menuClick);
+contact.addEventListener("click", menuClick);
 
 //accordian
 
