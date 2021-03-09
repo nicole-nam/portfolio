@@ -15,7 +15,7 @@ html {
   }
 
   @media only screen and (max-width: $bp-xs) {
-    font-size: 40%;  //6.4px
+    font-size: 40%; //6.4px
   }
 }
 
@@ -28,4 +28,10 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+
+.footer {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
 }

@@ -36,6 +36,12 @@ a {
   color: white;
 }
 
+.footer {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
 .primary-text {
   font-size: 3rem;
   margin-bottom: 5rem;

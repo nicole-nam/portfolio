@@ -1,5 +1,6 @@
 "use strict";
 
+//variables
 const navBar = document.querySelector(".navigation");
 const header = document.querySelector(".header");
 const navBtn = document.querySelector(".navigation__button-box");
@@ -8,13 +9,13 @@ const headerBottom = document.querySelector(".header-bottom");
 const closeIcon = document.getElementById("close-menu");
 const openIcon = document.getElementById("open-menu");
 const contact = document.getElementById("contact");
+const footer = document.querySelector(".footer");
 const extendBtn = document.querySelectorAll(".extend");
 const description = document.querySelectorAll(".description__sub");
-const sticky = navBar.offsetTop;
-console.log(sticky);
-const headerSticky = headerBottom.offsetTop;
-console.log(headerSticky);
+const date = new Date().getFullYear();
 
+const sticky = navBar.offsetTop;
+const headerSticky = headerBottom.offsetTop;
 //sticky navigation bar
 window.onscroll = function () {
   stickyNav();
@@ -31,14 +32,7 @@ function stickyNav() {
   }
 }
 
-function stickyBottom() {
-  if (window.pageYOffset > headerSticky) {
-    headerBottom.classList.add("stickyBottom");
-  } else {
-    headerBottom.classList.remove("stickyBottom");
-  }
-}
-
+//menu click 
 function menuClick() {
   navLinks.classList.toggle("menu-open");
   if (navLinks.classList.contains("menu-open")) {
@@ -55,10 +49,12 @@ function menuClick() {
 navBtn.addEventListener("click", menuClick);
 contact.addEventListener("click", menuClick);
 
-//accordian
-
+//project description accordian
 for (let i = 0; i < extendBtn.length; i++) {
   extendBtn[i].addEventListener("click", function () {
     description[i].classList.toggle("show");
   });
 }
+
+//footer 
+footer.innerHTML = `&copy; Nicole Nam ${date}`;
