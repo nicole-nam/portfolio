@@ -7,6 +7,9 @@ window.addEventListener("DOMContentLoaded", function () {
   function success() {
     form.reset();
     status.innerHTML = "Your message has been sent. Thank you! ";
+    setTimeout(() => {
+      status.innerHTML = "";
+    }, 2000);
   }
 
   function error() {
