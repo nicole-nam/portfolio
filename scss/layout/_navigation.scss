@@ -29,7 +29,10 @@
   &__icons {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+  }
+
+  &__icons a:not(:last-child) {
+    margin-right: 2rem;
   }
 
   &__button-box {
@@ -129,10 +132,9 @@ a:hover {
 }
 
 .stickyBottom {
-position:fixed;
+  position: fixed;
 
   @media only screen and (min-width: $bp-xxs) {
     display: none;
   }
 }
-

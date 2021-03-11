@@ -112,7 +112,10 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 1rem;
+}
+
+.navigation__icons a:not(:last-child) {
+  margin-right: 2rem;
 }
 
 .navigation__button-box {
