@@ -138,12 +138,13 @@
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
+    margin-right: 2rem;
   }
+  
   &__links,
   &__links:link,
   &__links:visited {
     display: flex;
-    gap: 2rem;
     color: black;
     cursor: pointer;
   }

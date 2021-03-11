@@ -504,13 +504,13 @@ a:hover {
 .popup__icon {
   height: 2.5rem;
   width: 2.5rem;
+  margin-right: 2rem;
 }
 
 .popup__links, .popup__links:link, .popup__links:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
   color: black;
   cursor: pointer;
 }
