@@ -6,7 +6,6 @@
 
   &__list {
     display: flex;
-    gap: 2rem;
     list-style: none;
   }
 
@@ -15,6 +14,7 @@
     padding: 1rem;
     border-radius: 1px;
     color: black;
+    margin-right: 2rem;
   }
 
   @media only screen and (max-width: $bp-sm) {
@@ -30,4 +30,3 @@
     }
   }
 }
-
