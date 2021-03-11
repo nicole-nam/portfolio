@@ -406,7 +406,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
   border-right: 1px solid #000;
   width: 100%;
   margin: 0 auto;
@@ -469,6 +468,7 @@ a:hover {
   color: #fff;
   background-color: #000;
   width: 60%;
+  margin-top: 2rem;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;

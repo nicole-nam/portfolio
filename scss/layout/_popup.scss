@@ -69,7 +69,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     border-right: 1px solid #000;
 
     width: 100%;
@@ -114,6 +113,7 @@
     color: #fff;
     background-color: #000;
     width: 60%;
+    margin-top: 2rem;
     cursor: pointer;
     transition: all 0.3s;
     &:focus {
@@ -140,7 +140,7 @@
     width: 2.5rem;
     margin-right: 2rem;
   }
-  
+
   &__links,
   &__links:link,
   &__links:visited {
